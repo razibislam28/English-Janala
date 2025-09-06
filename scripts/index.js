@@ -26,9 +26,15 @@ const displayLevelWord = (words) => {
     card.innerHTML = `      <div
         class="bg-whit rounded-xl shadow-sm text-center py-20 px-5 space-y-4"
       >
-        <h2 class="text-2xl font-bold">${word.word}</h2>
+        <h2 class="text-2xl font-bold">${
+          word.word ? word.word : "শব্দটি খুঁজে পাওয়া যাচ্ছে না।"
+        }</h2>
         <p class="font-semibold">Meanig /Pronounciation</p>
-        <div class="font-medium text-2xl font-bangla">"${word.meaning} / ${word.pronunciation}"</div>
+        <div class="font-medium text-2xl font-bangla">"${
+          word.meaning ? word.meaning : "অর্থ খুঁজে পাওয়া যাচ্ছে না "
+        } / ${
+      word.pronunciation ? word.pronunciation : "pronunciation পাওয়া যাচ্ছে না"
+    }"</div>
         <div class="flex justify-between items-center">
           <button class="btn bg-[#1A91FF10] hover:bg-[#1A91FF80]">
             <i class="fa-solid fa-circle-info"></i>
