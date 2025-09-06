@@ -48,7 +48,7 @@ const displayLevelWord = (words) => {
         : "pronunciation পাওয়া যাচ্ছে   না"
     }"</div>
         <div class="flex justify-between items-center">
-          <button class="btn bg-[#1A91FF10] hover:bg-[#1A91FF80]">
+          <button onclick="my_modal_5.showModal()" class="btn bg-[#1A91FF10] hover:bg-[#1A91FF80]">
             <i class="fa-solid fa-circle-info"></i>
           </button>
           <button class="btn bg-[#1A91FF10] hover:bg-[#1A91FF80]">
